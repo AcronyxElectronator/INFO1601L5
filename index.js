@@ -109,7 +109,7 @@ console.log(reversed);//[344, 103, 42, 33, 16, -5]
 console.log(arr.join('-'));//"-5-103-16-33-344-42" joins array with provided separator
 */
 
-//task 5.2
+/*task 5.2
 let arr = [12, 33, 4, 5, -4, 8, 19, 25];
                 
 //map() creates a new array from the elements of one without changing the old one
@@ -144,3 +144,34 @@ function intCompare(a, b){
 //sort function must return either 0, +ve, -ve
 let ascending = arr.sort(intCompare)
 console.log(ascending);
+*/
+
+//task 6
+
+//Create a constructor a functions which builds object for us
+function createPerson(name, height, weight) {
+  return { name: name, height: height, weight: weight };
+}
+
+function calcBMI(weight, height) {
+  return weight / (height * height);
+}
+
+function avgBMI(people) {
+  let sum = 0;
+  for (let person of people) {
+    //sum the bmi of each person
+    sum += calcBMI(person.weight, person.height);
+  }
+  //calculate average
+  return sum / people.length;
+}
+
+//create a collection of people
+let people = [
+  createPerson("Sally", 60, 2.5),
+  createPerson("Ben", 81, 3),
+  createPerson("Shelly", 50, 1.7)
+];
+
+console.log(avgBMI(people));
