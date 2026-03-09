@@ -4,6 +4,7 @@ for(let i=0; i< arr.length; i++){
   console.log(arr[i])
 }
 
+/* Task 2
 let name = "bob";
 let age = 24;
 
@@ -15,3 +16,11 @@ console.log(`Hello my name is ${name}, I'm ${age} years old`);
 
 console.log(`I was born in ${2020 - age}`)
 //I was born in 1966
+*/
+console.log('1' == 1); //true
+console.log(1 == true); //true
+console.log("false" == false); // "false" is not false
+console.log("false" == true); // "false" is not true either
+
+if("false")
+   console.log("Hello false!") //but "false" is true enough here
