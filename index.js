@@ -52,8 +52,7 @@ for(let i=0; i< 50; i++){
 }
 */
 
-//Task 5
-
+/*Task 5
 function happyPrint(string){
  console.log("😀: "+string);
 }
@@ -72,3 +71,12 @@ function add(a, b, callback){
 
 add(5, 10, happyPrint);
 add(11, 12, sadPrint);
+*/
+
+//Task 2 (set interval and timeout)
+//prints current date
+function printDate(){
+   console.log(Date().toLocaleTimeString());
+}
+      
+setInterval(printDate, 1000);
