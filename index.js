@@ -23,7 +23,7 @@ console.log(`I was born in ${2020 - age}`)
 //I was born in 1966
 */
 
-//Task 4.1
+/*Task 4.1
 console.log('1' == 1); //true
 console.log(1 == true); //true
 console.log("false" == false); // "false" is not false
@@ -50,3 +50,25 @@ for(let i=0; i< 50; i++){
     console.log(i);
   }
 }
+*/
+
+//Task 5
+
+function happyPrint(string){
+ console.log("😀: "+string);
+}
+
+function sadPrint(string){
+ console.log("😢: "+string);
+}
+
+//This high-order function adds 2 parameters and passes the answer to the callback
+function add(a, b, callback){
+   let ans = a + b;
+   callback(ans);// call the callback and pass the answer to it
+}
+
+//call add passing the callbacks to it
+
+add(5, 10, happyPrint);
+add(11, 12, sadPrint);
